@@ -107,7 +107,6 @@ replay.addEventListener('click',function(){
     cDiv();
     cDiv();
     cDiv();
-    cDiv();
     move();
     bindEvent();
     num = 0;

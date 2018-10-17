@@ -20,9 +20,7 @@ html{
     position: absolute;
     top:0;
     text-align: center;
-    border-bottom: 0.03rem dashed #aaa
-}
-.wrapper #go a{
+    border-bottom: 0.03rem dashed #aaa;
     color: yellowgreen;
     font-size: 0.6rem;
 }
