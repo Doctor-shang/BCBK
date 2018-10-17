@@ -110,6 +110,7 @@ replay.addEventListener('click',function(){
     move();
     bindEvent();
     num = 0;
+    speed = 0.05
     result.style.display = 'none';
     main.style.display = 'block';
 },false)
