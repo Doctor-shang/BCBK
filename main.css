@@ -4,6 +4,9 @@
     padding: 0;
     text-decoration: none;
 }
+html{
+    font-size: calc(100vw/4);
+}
 .hide{
     display: none;
 }
