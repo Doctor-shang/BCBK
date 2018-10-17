@@ -7,7 +7,7 @@ var replay = document.getElementById('replay');
 var speed = 0.05;
 var timer = null;
 var num = 0;
-var rem = document.documentElement.scrollWidth/400*100;
+var rem = document.documentElement.scrollWidth/4;
 
 wrapper.style.height = document.documentElement.scrollHeight/rem + 'rem';
 main.style.height = document.documentElement.scrollHeight/rem + 1.5 + 'rem';
