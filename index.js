@@ -9,7 +9,10 @@ var timer = null;
 var num = 0;
 var rem = document.documentElement.scrollWidth/400*100;
 
-wrapper.style.height = document.documentElement.scrollHeight/rem + 'rem'
+wrapper.style.height = document.documentElement.scrollHeight/rem + 'rem';
+main.style.height = document.documentElement.scrollHeight/rem + 1.5 + 'rem';
+main.style.top = -document.documentElement.scrollHeight/rem - 1.5 + 'rem';
+result.style.height = document.documentElement.scrollHeight/rem + 1.5 + 'rem';
 
 
 function clickStart(){
@@ -58,7 +61,7 @@ function cDiv(){
             $t.setAttribute('class', 'w')
         }
     }
-    if(main.childNodes.length > 6){
+    if(main.childNodes.length >= (parseInt(document.documentElement.scrollHeight/(rem*1.5))+3)){
         var last = main.lastChild;
         var li = last.childNodes;
         console.log(li)
