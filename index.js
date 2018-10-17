@@ -7,17 +7,21 @@ var replay = document.getElementById('replay');
 var speed = 0.05;
 var timer = null;
 var num = 0;
-var rem = document.documentElement.scrollWidth/4;
+var ele =document.documentElement;
+var rem =ele.scrollWidth/4;
 
-wrapper.style.height = document.documentElement.scrollHeight/rem + 'rem';
-main.style.height = document.documentElement.scrollHeight/rem + 1.5 + 'rem';
-main.style.top = -document.documentElement.scrollHeight/rem - 1.5 + 'rem';
-result.style.height = document.documentElement.scrollHeight/rem + 1.5 + 'rem';
+wrapper.style.height = ele.scrollHeight/rem + 'rem';
+main.style.height = ele.scrollHeight/rem + 1.5 + 'rem';
+main.style.top = -ele.scrollHeight/rem - 1.5 + 'rem';
+result.style.height = ele.scrollHeight/rem + 1.5 + 'rem';
 
 
 function clickStart(){
     go.addEventListener('click',function(){
         go.style.display = 'none';
+        cDiv();
+        cDiv();
+        cDiv();
         cDiv();
         cDiv();
         cDiv();
@@ -98,6 +102,9 @@ function bindEvent(){
 replay.addEventListener('click',function(){
     main.innerHTML = '';
     main.style.top = '-7.5rem';
+    cDiv();
+    cDiv();
+    cDiv();
     cDiv();
     cDiv();
     cDiv();
